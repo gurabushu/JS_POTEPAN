@@ -1,0 +1,652 @@
+/*大枠の設定*/
+body{
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+p{
+    font-size: 12px;
+    margin: 8px;
+    font-weight: light;
+}
+
+
+
+
+/*ヘッダーメニューの部分*/
+
+ .ul-wrapper p{
+    margin: 0;
+    font-size: 10px;
+    font-weight: 500;
+}
+
+ .ul-wrapper li{
+    list-style: none;
+    text-align: center;
+    font-size: 8px;
+
+}
+.ul-wrapper li a{
+    list-style: none;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 500;
+
+}
+
+
+.ul-wrapper{
+    text-align: center;
+    align-items: center;
+   
+}
+
+
+
+.button{
+    padding: 20px;
+    border-radius: 30px;
+    background-color: #F79214;
+    color: white;
+    font-size: 15px;
+
+}
+
+li a{
+    font-size: 16px;
+}
+
+
+/*ホバー*/
+li:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}   
+
+
+.header img:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.form-title :hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+
+.header img{
+    width: 185px;
+    height: 20px;
+    margin-left: 30px;
+}
+
+.nav {
+     right: -300%; 
+    }
+
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+    background-color: white;
+    width: 100%;
+    max-width: 100%;
+    box-shadow :0px 15px 20px 0px rgba(0, 0, 0, 0.05);
+    
+}
+
+
+.header ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+.ul-wrapper li{
+    margin-right: 30px;
+
+}
+
+.nav-list li a{
+    align-items: center;
+  
+}
+
+
+
+
+/*メイン*/
+
+/*positionで固定する部分*/
+.section-wrapper{
+     position: relative;
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+/*画像のサイズ child記述あり*/
+.img-wrapper img{
+    width: 348px;
+    height: auto;
+    position: absolute;
+    left: 0;
+    top: 0;
+
+}
+
+
+/*画像のサイズ child記述あり*/
+.bg-img-right img{
+    width: 348px;
+    height: auto;
+    position:absolute;
+    right: 0;
+    top: 350px;
+
+}
+
+/*画像のサイズ child記述あり*/
+.bg-img-logo img{
+    position:absolute;
+    top: 180px;
+    left: 600px;
+}
+
+/*画像のサイズ child記述あり*/
+.bg-img img{
+    width: 50%;
+    height: auto;
+    z-index: -1;
+    position: absolute;
+    top: -80px;
+    right: 0;
+
+
+}
+
+
+/*背景のオレンジ輪っか画像*/
+.bg-img-2 img{
+    width: 550px;
+    height: auto;
+    position: absolute;
+    top: 130px;
+    left: -70px;
+    z-index: -2;
+}
+
+
+
+
+
+/*文字の部分*/
+
+
+.wrapper-{
+    max-width: 100%;
+
+}
+
+.main-wrapper{
+    position: relative;
+    padding-top: 200px;
+    display: inline-block;
+    margin: auto;
+    margin-bottom: 0;
+
+}
+
+
+.main-wrapper h1{
+   font-size: 40px;
+   margin-bottom: 0;
+}
+
+.wrapper-{
+    padding-left: 150px;
+}
+
+/*丸いロゴ　child記述あり*/
+.bg-img-logo img{
+    width: 200px;
+    height: auto;
+    display: inline-block;
+    text-align: right;
+    position:absolute;
+    top: 200px;
+
+   
+
+}
+
+
+/*テキスト部分、フォーム*/
+.form-title h2 a{
+    background-color: #F79214;
+    color: white;
+    display:inline-block;
+    text-align: center;
+    border-radius: 30px;
+    padding: 20px 150px;
+    font-size: 15px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*以下メディアクエリ*/
+
+@media (max-width: 1024px) {
+
+    .wrapper-{
+        padding-left: 50px;
+        padding-top: 30px;
+    }
+
+
+    .bg-img img{
+        width: 90%;
+    }
+
+    .bg-img-logo img{
+        position: absolute;
+        left: 450px;
+
+    }
+
+    .img-wrapper img{
+        width: 40%;
+    }
+
+.header{
+    height: 70px;
+}
+
+    
+/*ハンバーガーメニュー実装*/
+
+.hamburger {
+    position: absolute;
+    right: 75px;
+
+}
+
+
+/*ハンバーガーメニューの三本線*/
+.hamburger span {
+    display: block;
+    height: 2px;
+    width: 30px;
+    background: rgb(119, 119, 119);
+    position: relative;
+    top: 5px;
+    right: 50px;
+    margin: 6px 0;
+    transition: 0.4s ease;
+    opacity: 0.7;
+
+
+}
+
+
+/*ハンバーガーメニューの動き実装*/
+.hamburger.active span:nth-child(1) {
+    transform: rotate(45deg);
+    position: absolute;
+    top: 10px;
+   
+    
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+   
+
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) ;
+    position: absolute;
+    top: 10px;
+ 
+ 
+}
+
+
+
+
+.nav {
+  position: fixed;
+  right: -100%; /* Hide menu outside of viewport */
+  top: 70px;
+  width: 100%; /* Set menu width */
+  height: 100%; /* Changed from 100vh */
+  background: rgba(0, 0, 0, 0.8);
+  transition: right 0.3s ease;
+  z-index: 999;
+ 
+}
+
+.nav.open { 
+    left: 0; 
+    right: 0; 
+}
+
+
+.nav ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-list p{
+    color: #F79214;
+    font-size: 20px;
+    letter-spacing: 10px;
+    
+}
+
+.ul-wrapper li a{
+    font-size: 20px;
+    letter-spacing: 10px;
+
+}
+
+.ul-wrapper li{
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+
+.nav a {
+  display: block;
+  color: white;
+  padding: 15px;
+  text-decoration: none;
+}
+.nav a:hover {
+  background: #555;
+}
+
+
+
+}
+
+
+
+
+/*スマホ表示*/
+
+@media (max-width: 430px) {
+
+
+
+/*ハンバーガーメニュー実装*/
+
+.hamburger {
+    position: absolute;
+    right: 5px;
+
+}
+
+
+/*ハンバーガーメニューの三本線*/
+.hamburger span {
+    display: block;
+    height: 2px;
+    width: 30px;
+    background: rgb(119, 119, 119);
+    position: relative;
+    top: 5px;
+    right: 50px;
+    margin: 6px 0;
+    transition: 0.4s ease;
+    opacity: 0.7;
+
+
+}
+
+
+/*ハンバーガーメニューの動き実装*/
+.hamburger.active span:nth-child(1) {
+    transform: rotate(45deg);
+    position: absolute;
+    top: 10px;
+   
+    
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+   
+
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) ;
+    position: absolute;
+    top: 10px;
+ 
+ 
+}
+
+
+
+
+.nav {
+  position: fixed;
+  right: -100%; /* Hide menu outside of viewport */
+  top: 70px;
+  width: 100%; /* Set menu width */
+  height: 100%; /* Changed from 100vh */
+  background: rgba(0, 0, 0, 0.8);
+  transition: right 0.3s ease;
+  z-index: 999;
+ 
+}
+
+.nav.open { 
+    left: 0; 
+    right: 0; 
+}
+
+
+.nav ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-list p{
+    color: #F79214;
+    font-size: 14px;
+}
+
+
+
+
+.nav a {
+  display: block;
+  color: white;
+  padding: 15px;
+  text-decoration: none;
+}
+.nav a:hover {
+  background: #555;
+}
+
+
+
+
+/*全体のレスポンシブ実装*/
+
+.header img{
+    width: 150px;
+    height: auto;
+}
+
+/*imgの外枠の大きさ指定*/
+.section-wrapper{
+    max-width: 100%;
+    height: auto;
+ 
+}
+
+
+/*imgサイズ調整*/
+/*ロゴのサイズと配置調整*/
+.bg-img-logo img{
+    position: absolute;
+    left: 0;
+    width: 30%;
+}
+
+/*その他画像サイズ調整*/
+
+.img-wrapper img{
+    width: 40%;
+}
+
+.bg-img-right img{
+    width: 25%;
+    position: absolute;
+    top: 150px;
+    opacity: 0;
+}
+
+.bg-img-2 img{
+    width: 60%;
+    position: absolute;
+    left: -20px;
+    top: 30px;
+}
+
+.bg-img img{
+    width: 300px;
+    position: absolute;
+    top: -10px;
+    right: 0;
+ 
+}
+
+.bg-img-logo img{
+    position: absolute;
+    left: 280px;
+    top: 300px;
+    width: 100px;
+}
+
+
+.header{
+    width: 100%;
+    max-width: 100%;
+  }
+
+
+
+/*フォントのサイズ調整*/
+.main-wrapper h1{
+    font-size: 40px;
+ 
+
+}
+.bg-img-logo h2{
+    font-size: 15px;
+    padding: 20px;
+}
+
+
+
+/*メイン文字を下に移動させる*/
+/*テキスト部分の大枠のサイズ指定*/
+.wrapper-{
+    margin: auto;
+    max-width: 100%;
+    padding-top: 90px;
+   
+}
+
+/*内容物のサイズ指定*/
+.main-wrapper{
+    width: 90%;
+    display:inline-block;
+    margin: auto;
+}
+
+
+/*文字の位置調整*/
+.main-wrapper h1{
+    margin: auto 20px;
+    font-size: 25px;
+}
+
+/*フォームボタンを大きく*/
+.form-title h2{
+    width: 95%;
+    display: inline-block;
+    margin: 20px auto;
+
+}
+
+.form-title h2 a{
+    margin: 0;
+    padding: 20px;
+    width: 90%;
+}
+
+.form-title{
+    display: block;
+    width: 95%;
+    margin: auto;
+
+
+}
+
+.bg-img-logo p{
+    font-size: 13px;
+    font-weight: lighter;
+
+
+}
+
+.wrapper-{
+    padding: 0;
+}
+
+/*テキストの画面の余白*/
+.bg-img-logo{
+    margin: auto 10px;
+   
+}
+
+
+}
