@@ -3,10 +3,11 @@ let timer = null;
 
 
 $("#start").on("click", function(){
-    if (timer !== null) {
+    if (timer != null) {
         return;
-    }
-    let startTime = Date.now() - (count || 0);
+        }
+
+    let startTime = Date.now() - (count || null);
 
     timer = setInterval(function(){
         let elapsed = Date.now() - startTime;
@@ -37,8 +38,10 @@ $("#stop").on("click",function(){
 $("#reset").on("click",function(){
     if (timer !== null) {
     clearInterval(timer);
-    timer = null;
+     timer = null;
     }
+    count = 0
+   
     $(".count").text("00:00.00");
 });
 
